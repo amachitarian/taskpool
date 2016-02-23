@@ -1,16 +1,16 @@
-<h1>Todo API</h1>
+<h1>Task API for Taskpool</h1>
 
-<p>This is a RESTful JSON API for Todo's. It exposes the following endpoints:</p>
+<p>This is a RESTful JSON API for Task's. It exposes the following endpoints:</p>
 
 <ul>
   <li>
     <%= link_to "#get-task" do %>
-      <code>GET /todos</code>
+      <code>GET /tasks</code>
     <% end %>
   </li>
 </ul>
 
-<h2 id="#get-task">GET /todos</h2>
+<h2 id="#get-task">GET /tasks</h2>
 
 <pre>
 {
@@ -18,17 +18,19 @@
     count: 2,
     page: 0
   },
-  todos: [
+  tasks: [
     {
       id: 1,
-      title: "This needs doing",
+      title: "Generate rails app",
+      description: "Go to terminal and put your command",
       completed: false,
       created_at: "2016-02-22T16:28:18.093Z",
       updated_at: "2016-02-22T16:28:18.093Z"
     },
     {
       id: 2,
-      title: "Buy bread",
+      title: "Create the database",
+      description: "rake create and migrate for our task model",
       completed: true,
       created_at: "2016-02-22T16:28:18.120Z",
       updated_at: "2016-02-22T16:28:18.120Z"

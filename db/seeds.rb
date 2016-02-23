@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Task.create([
-  { title: "Buy brsgsgead", description: "Pusdfgdsgsdgsh", status: true }
-  { title: "Buy bread", description: "Push", status: true }
+  { title: "Generate rails app", description: "Go to terminal and put your command", status: false }
+  { title: "Create the database", description: "rake create and migrate for our task model", status: true }
+  { title: "Study the API example", description: "Go to Github and implement the example from Codaisseur", status: false }
+  { title: "Make the API", description: "Create the seeds, routes and controller", status: true }
 ])
